@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "as_of": "2025-12-06",
+  "key": "CAEI",
+  "name": "Coercive Apparatus Expansion Index",
+  "score": 72,
+  "band": "High",
+  "summary": "Coercive capacity, reach, and targeting are expanding, with uneven oversight and legal restraints.",
+  "components": [
+    {
+      "code": "EC",
+      "name": "Enforcement Capacity",
+      "score_0_4": 3,
+      "band": "High",
+      "summary": "Detention footprint, tactical units, and specialized enforcement capacity have grown substantially."
+    },
+    {
+      "code": "OR",
+      "name": "Operational Reach",
+      "score_0_4": 3,
+      "band": "High",
+      "summary": "Cross-jurisdictional task forces and authorities enable wide operational reach with limited friction."
+    },
+    {
+      "code": "TI",
+      "name": "Targeting & Impact",
+      "score_0_4": 3,
+      "band": "High",
+      "summary": "Disparate impacts on specific communities and migrants are persistent and well-documented."
+    },
+    {
+      "code": "OA_raw",
+      "name": "Oversight & Accountability (raw)",
+      "score_0_4": 2,
+      "band": "Mixed",
+      "summary": "Some inspectors general and courts are active, but gaps remain and remedies are uneven."
+    },
+    {
+      "code": "LR_raw",
+      "name": "Legal Restraints (raw)",
+      "score_0_4": 1,
+      "band": "Weak",
+      "summary": "Formal legal limits exist but are broad, contain carve-outs, or are subject to expansive interpretations."
+    }
+  ],
+  "notes": [
+    "Scores are illustrative alpha values used to prototype the CAEI module.",
+    "In production, CAEI would be derived from detention capacity, task force authorities, litigation density, and statutory constraints."
+  ]
+}

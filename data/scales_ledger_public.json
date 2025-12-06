@@ -1,0 +1,32 @@
+[
+  {
+    "id": "EVT-2025-0001",
+    "date": "2025-11-15",
+    "jurisdiction": "US-federal",
+    "actor": "Supreme Court",
+    "pillar": "S",
+    "indicator_id": "S.2",
+    "indicator_label": "Emergency powers & constitutional limits",
+    "score_0_4": 3,
+    "band": "Red",
+    "short_reason": "Expanded immunity for official acts that narrows avenues for executive accountability.",
+    "source_type": "court_opinion",
+    "source_link": "https://example.org/opinion",
+    "confidence": "High"
+  },
+  {
+    "id": "EVT-2025-0002",
+    "date": "2025-10-02",
+    "jurisdiction": "US-federal",
+    "actor": "Executive",
+    "pillar": "C",
+    "indicator_id": "C.3",
+    "indicator_label": "Use of security forces in domestic politics",
+    "score_0_4": 2,
+    "band": "Amber",
+    "short_reason": "Guard deployment posture near peaceful demonstrations raised coercion concerns.",
+    "source_type": "news_report",
+    "source_link": "https://example.org/article",
+    "confidence": "Medium"
+  }
+]

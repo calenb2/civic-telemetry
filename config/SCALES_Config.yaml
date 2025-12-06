@@ -1,0 +1,286 @@
+version: "2.0.0"
+as_of: "2025-12-06"
+
+meta:
+  name: "SCALES"
+  long_name: "Separation-of-powers Composite Assessment & Legal Early-warning System"
+  description: >
+    Framework for turning political, legal, and fiscal events into structured separation-of-powers
+    risk scores, with explicit pillars, indicators, and evidence requirements.
+
+bands:
+  # Constitutional core bands (global SCALES + ILG/CCI/CSSI)
+  constitutional:
+    - { name: "Green",  lower: 0,   upper: 20,  label: "Stable" }
+    - { name: "Yellow", lower: 20,  upper: 40,  label: "Watch" }
+    - { name: "Amber",  lower: 40,  upper: 60,  label: "Elevated" }
+    - { name: "Red",    lower: 60,  upper: 80,  label: "Severe" }
+    - { name: "Black",  lower: 80,  upper: 100, label: "Acute / Crisis" }
+
+  # Sector / module bands (AI-PEI, CAEI, SDEI)
+  module:
+    - { name: "Low",        lower: 0,  upper: 25 }
+    - { name: "Moderate",   lower: 25, upper: 50 }
+    - { name: "High",       lower: 50, upper: 75 }
+    - { name: "Extreme",    lower: 75, upper: 100 }
+
+indices:
+  # Top-level dashboard indices
+  ILG:
+    key: "ILG"
+    name: "Institutional & Legal Guardrails"
+    description: "Integrity of separation of powers, rule of law, and formal constraints."
+    # Weights over pillars (normalized in scoring code)
+    pillar_weights:
+      S: 0.4   # Structural & Constitutional Safeguards
+      L: 0.4   # Legislative & Electoral Integrity
+      A: 0.2   # Administrative State & Enforcement
+
+  CCI:
+    key: "CCI"
+    name: "Coercion & Capture"
+    description: "Use of security, administrative, and economic power for partisan or personal ends."
+    pillar_weights:
+      C: 0.4   # Coercive & Security Apparatus
+      A: 0.3   # Administrative State & Enforcement
+      E: 0.3   # Economic Power & Patronage
+
+  CSSI:
+    key: "CSSI"
+    name: "Civic Space & Signal"
+    description: "Freedom and integrity of civic and information space."
+    pillar_weights:
+      S2: 0.5  # Speech, Media & Information Space
+      C: 0.25  # Coercive apparatus effects on civil liberties
+      L: 0.25  # Legal protections for civil / electoral rights
+
+global_score:
+  # How to combine ILG/CCI/CSSI into a single global SCALES score
+  index_weights:
+    ILG: 0.33
+    CCI: 0.33
+    CSSI: 0.34
+
+pillars:
+  # Note: S2 is the second S in SCALES (Speech/Media/Information)
+  - code: "S"
+    name: "Structural & Constitutional Safeguards"
+    description: "Separation of powers, federalism design, emergency powers, succession rules."
+
+  - code: "C"
+    name: "Coercive & Security Apparatus"
+    description: "Military, police, intelligence services and how they are used."
+
+  - code: "A"
+    name: "Administrative State & Enforcement"
+    description: "Neutrality and professionalism of civil service, regulators, and prosecutors."
+
+  - code: "L"
+    name: "Legislative & Electoral Integrity"
+    description: "Election rules, districting, certification, and legislative process."
+
+  - code: "E"
+    name: "Economic Power & Patronage"
+    description: "Use of state resources and regulation to reward allies or punish opponents."
+
+  - code: "S2"
+    name: "Speech, Media & Social Information Space"
+    description: "Press freedom, platforms, intimidation, propaganda, and disinformation."
+
+indicators:
+  # Example indicators; the list should grow over time.
+  # Each indicator has a 0–4 scale with narrative anchors stored elsewhere.
+  - id: "L.2"
+    pillar: "L"
+    name: "Election certification integrity"
+    description: "Behavior of key actors during certification of election results."
+    scale:
+      0: "Routine, uncontested certification."
+      1: "Rhetorical pressure but no meaningful disruption."
+      2: "Serious pressure or procedural games; certification ultimately holds."
+      3: "Open attempts to overturn or refuse certification."
+      4: "Successful overturning/refusal of clearly certified results."
+
+  - id: "S.2"
+    pillar: "S"
+    name: "Emergency powers & constitutional limits"
+    description: "Use, abuse, or extension of emergency powers touching core constitutional limits."
+
+  - id: "C.3"
+    pillar: "C"
+    name: "Use of security forces in domestic politics"
+    description: "Deployment or threat of deployment of coercive forces in domestic political contexts."
+
+  # Additional indicators to be defined in future revisions.
+  # This config is designed so the scoring engine can look up weight/placement by indicator_id.
+
+scoring:
+  indicator_scale:
+    min: 0
+    max: 4
+  # How to convert pillar indicator scores into a 0–100 score
+  pillar_aggregation:
+    method: "weighted_average"
+    default_indicator_weight: 1.0
+    recency_weighting: "optional"     # future: implement window/decay if needed
+
+  index_aggregation:
+    method: "weighted_average"
+    normalize_to_0_100: true
+
+  global_aggregation:
+    method: "weighted_average"
+    normalize_to_0_100: true
+
+tripwires:
+  # Tripwires bypass slow-moving averages and flag acute events.
+  - id: "T1"
+    name: "Use of armed forces or federalized units against peaceful domestic political activity"
+    description: "Deployment of military or federalized forces against peaceful protest or political assembly."
+    pillar: "C"
+    indicator_ids: ["C.3"]
+    severity: "High"
+    cooldown_days: 365
+
+  - id: "T2"
+    name: "Refusal to comply with final constitutional court orders"
+    description: "Key actors openly defy final rulings by constitutional courts."
+    pillar: "S"
+    indicator_ids: ["S.2"]
+    severity: "High"
+    cooldown_days: 365
+
+  - id: "T3"
+    name: "Overturning or non-recognition of clearly certified election results"
+    description: "Certification is reversed, ignored, or overridden."
+    pillar: "L"
+    indicator_ids: ["L.2"]
+    severity: "Critical"
+    cooldown_days: 730
+
+modules:
+  # Sector-specific indices under SCALES (Civic Moody style)
+  AI_PEI:
+    key: "AI_PEI"
+    name: "AI Preference Engineering Index"
+    description: "Capacity to use AI and data-driven tools to sculpt public preferences at scale."
+    components:
+      - code: "PIC"
+        name: "Persuasion Infrastructure Capacity"
+        weight: 1.0
+      - code: "CC"
+        name: "Centralization of Control"
+        weight: 1.0
+      - code: "DP"
+        name: "Deployment Pattern"
+        weight: 1.0
+      - code: "CT_raw"
+        name: "Contestability & Counter-speech (raw)"
+        weight: 1.0
+      - code: "GS_raw"
+        name: "Governance & Safeguards (raw)"
+        weight: 1.0
+    scoring:
+      # Raw component scores: 0–4 → AI_PEI_raw (0–20) → normalized 0–100
+      combine_method: "sum"
+      max_raw: 20
+      normalize_to_0_100: true
+
+  CAEI:
+    key: "CAEI"
+    name: "Coercive Apparatus Expansion Index"
+    description: "How much coercive capacity the state has built, how far it can reach, who it targets, and how strong the brakes are."
+    components:
+      - code: "EC"
+        name: "Enforcement Capacity"
+        weight: 1.0
+      - code: "OR"
+        name: "Operational Reach"
+        weight: 1.0
+      - code: "TI"
+        name: "Targeting & Impact"
+        weight: 1.0
+      - code: "OA_raw"
+        name: "Oversight & Accountability (raw)"
+        weight: 1.0
+      - code: "LR_raw"
+        name: "Legal Restraints (raw)"
+        weight: 1.0
+    scoring:
+      combine_method: "sum"
+      max_raw: 20
+      normalize_to_0_100: true
+
+  SDEI:
+    key: "SDEI"
+    name: "Surveillance & Data Exploitation Index"
+    description: "Breadth and integration of data collection, analytic power, access governance, and rights remedies."
+    components:
+      - code: "CB"
+        name: "Collection Breadth"
+        weight: 1.0
+      - code: "IL"
+        name: "Integration & Linkability"
+        weight: 1.0
+      - code: "AC"
+        name: "Analytic Capability"
+        weight: 1.0
+      - code: "AG_raw"
+        name: "Access Governance (raw)"
+        weight: 1.0
+      - code: "RR_raw"
+        name: "Rights & Remedies (raw)"
+        weight: 1.0
+    scoring:
+      combine_method: "sum"
+      max_raw: 20
+      normalize_to_0_100: true
+
+evidence_ledger:
+  # Shape of evidence entries used to populate scales_ledger_public.json
+  fields:
+    - name: "id"
+      type: "string"
+      required: true
+    - name: "date"
+      type: "date"
+      required: true
+    - name: "jurisdiction"
+      type: "string"
+      required: true
+    - name: "actor"
+      type: "string"
+      required: true
+    - name: "pillar"
+      type: "string"
+      required: true
+    - name: "indicator_id"
+      type: "string"
+      required: true
+    - name: "indicator_label"
+      type: "string"
+      required: false
+    - name: "score_0_4"
+      type: "integer"
+      required: true
+    - name: "band"
+      type: "string"
+      required: false
+    - name: "short_reason"
+      type: "string"
+      required: true
+    - name: "source_type"
+      type: "string"
+      required: true
+    - name: "source_link"
+      type: "string"
+      required: false
+    - name: "confidence"
+      type: "string"
+      required: false
+
+  # Minimal validation rules the scoring engine can enforce
+  rules:
+    indicator_id_must_map_to_pillar: true
+    score_0_4_must_be_within_range: true
+    require_min_evidence_per_score: 1

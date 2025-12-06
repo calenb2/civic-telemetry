@@ -1,0 +1,30 @@
+[02-Dec-2025 10:19:25 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/subagency.php(2): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 10:20:28 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/subagency.php(2): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 10:22:49 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/subagency.php(2): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 10:26:42 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/db_test.php(5): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 16:02:13 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "SELECT" in /home2/cultuncy/civictelemetry.org/subagency.php on line 115
+[02-Dec-2025 16:02:16 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "SELECT" in /home2/cultuncy/civictelemetry.org/subagency.php on line 115
+[02-Dec-2025 16:04:39 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "SELECT" in /home2/cultuncy/civictelemetry.org/subagency.php on line 115
+[02-Dec-2025 16:15:00 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "SELECT" in /home2/cultuncy/civictelemetry.org/subagency.php on line 114
+[02-Dec-2025 16:15:03 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "SELECT" in /home2/cultuncy/civictelemetry.org/subagency.php on line 114
+[02-Dec-2025 16:15:12 America/Chicago] PHP Parse error:  syntax error, unexpected identifier "SELECT" in /home2/cultuncy/civictelemetry.org/subagency.php on line 114

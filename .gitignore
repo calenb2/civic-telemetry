@@ -1,0 +1,13 @@
+# Secrets
+db.php
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependency folders (for future use)
+vendor/
+node_modules/

@@ -1,0 +1,42 @@
+[02-Dec-2025 09:52:32 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_monthly.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 09:52:44 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_monthly.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 09:52:47 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_monthly.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 09:53:23 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_monthly.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 10:23:06 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_monthly.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 10:23:06 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_monthly.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9
+[02-Dec-2025 10:23:44 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'cultuncy_ctuser'@'localhost' (using password: YES) in /home2/cultuncy/civictelemetry.org/db.php:9
+Stack trace:
+#0 /home2/cultuncy/civictelemetry.org/db.php(9): mysqli->__construct('localhost', 'cultuncy_ctuser', Object(SensitiveParameterValue), 'cultuncy_civict...')
+#1 /home2/cultuncy/civictelemetry.org/api/ice_contracts.php(4): require('/home2/cultuncy...')
+#2 {main}
+  thrown in /home2/cultuncy/civictelemetry.org/db.php on line 9

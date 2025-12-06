@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "as_of": "2025-12-06",
+  "key": "AI_PEI",
+  "name": "AI Preference Engineering Index",
+  "score": 74,
+  "band": "High",
+  "summary": "AI-enabled persuasion capacity is high and increasingly concentrated, raising concerns about polarization-by-design and semi-lock dynamics.",
+  "ect": "ECT-2",
+  "ect_label": "Dual-elite alternation",
+  "components": [
+    {
+      "code": "PIC",
+      "name": "Persuasion Infrastructure Capacity",
+      "score_0_4": 3,
+      "band": "High",
+      "summary": "Mature stack: data lakes, ML, and gen-AI tools widely used in comms and campaigns."
+    },
+    {
+      "code": "CC",
+      "name": "Centralization of Control",
+      "score_0_4": 3,
+      "band": "High",
+      "summary": "Practical control of key persuasion channels is concentrated in a small set of state-aligned and corporate platforms."
+    },
+    {
+      "code": "DP",
+      "name": "Deployment Pattern",
+      "score_0_4": 3,
+      "band": "High",
+      "summary": "Regular use for segmented, emotional, and wedge-issue campaigns; some evidence of manipulative tactics."
+    },
+    {
+      "code": "CT_raw",
+      "name": "Contestability & Counter-speech (raw)",
+      "score_0_4": 2,
+      "band": "Mixed",
+      "summary": "Independent media and civil society still exist but operate with structural disadvantages and targeted chilling effects."
+    },
+    {
+      "code": "GS_raw",
+      "name": "Governance & Safeguards (raw)",
+      "score_0_4": 1,
+      "band": "Weak",
+      "summary": "Partial privacy and platform rules exist but are narrow, under-enforced, or full of carve-outs."
+    }
+  ],
+  "notes": [
+    "Scores are illustrative alpha values for demonstration purposes.",
+    "In a production run, AI_PEI would be calculated from tagged spend, platform rules, and documented campaign usage patterns."
+  ]
+}
