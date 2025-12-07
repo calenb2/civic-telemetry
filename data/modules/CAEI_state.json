@@ -3,7 +3,7 @@
   "as_of": "2025-12-06",
   "key": "CAEI",
   "name": "Coercive Apparatus Expansion Index",
-  "score": 60.0,
+  "score": 55.0,
   "band": "High",
   "summary": "Illustrative CAEI score computed from component-level evidence.",
   "components": [
@@ -17,28 +17,28 @@
     {
       "code": "OR",
       "name": "Operational Reach",
-      "score_0_4": 3.0,
-      "band": "Extreme",
+      "score_0_4": 2.5,
+      "band": "High",
       "summary": ""
     },
     {
       "code": "TI",
       "name": "Targeting & Impact",
-      "score_0_4": 3.0,
-      "band": "Extreme",
+      "score_0_4": 2.5,
+      "band": "High",
       "summary": ""
     },
     {
       "code": "OA_raw",
       "name": "Oversight & Accountability (raw)",
-      "score_0_4": 2.0,
-      "band": "High",
+      "score_0_4": 1.5,
+      "band": "Moderate",
       "summary": ""
     },
     {
       "code": "LR_raw",
       "name": "Legal Restraints (raw)",
-      "score_0_4": 1.0,
+      "score_0_4": 1.5,
       "band": "Moderate",
       "summary": ""
     }
