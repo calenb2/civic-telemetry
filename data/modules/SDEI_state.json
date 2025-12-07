@@ -3,7 +3,7 @@
   "as_of": "2025-12-06",
   "key": "SDEI",
   "name": "Surveillance & Data Exploitation Index",
-  "score": 60.0,
+  "score": 55.0,
   "band": "High",
   "summary": "Illustrative SDEI score computed from component-level evidence.",
   "components": [
@@ -17,15 +17,15 @@
     {
       "code": "IL",
       "name": "Integration & Linkability",
-      "score_0_4": 3.0,
-      "band": "Extreme",
+      "score_0_4": 2.5,
+      "band": "High",
       "summary": ""
     },
     {
       "code": "AC",
       "name": "Analytic Capability",
-      "score_0_4": 3.0,
-      "band": "Extreme",
+      "score_0_4": 2.5,
+      "band": "High",
       "summary": ""
     },
     {
