@@ -1,0 +1,6 @@
+id,date,jurisdiction,actor,component_code,score_0_4,short_reason,source_type,source_link,confidence
+CAEI-2025-0001,2025-09-15,US-federal,ICE/Enforcement,EC,3,"Expansion of detention bed capacity and specialized enforcement units beyond prior baselines.","budget_analysis","https://example.org/ec","High"
+CAEI-2025-0002,2025-09-25,US-federal,DHS/Task Force,OR,3,"Cross-jurisdictional task forces with broad operational reach and flexible mandates.","policy_report","https://example.org/or","Medium"
+CAEI-2025-0003,2025-10-05,US-federal,ICE Operations,TI,3,"Persistent disparate impacts on migrants and specific communities in enforcement outcomes.","litigation_summary","https://example.org/ti","High"
+CAEI-2025-0004,2025-10-20,US-federal,Inspectors General,OA_raw,2,"Some active IG and court oversight, but gaps remain and remedial follow-through is uneven.","ig_report","","Medium"
+CAEI-2025-0005,2025-11-01,US-federal,Legislature/Executive,LR_raw,1,"Legal authorities for detention and force are broad with limited new restraint, but some process safeguards exist.","law_review","https://example.org/lr","Medium"
