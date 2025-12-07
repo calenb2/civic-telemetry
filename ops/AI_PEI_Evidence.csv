@@ -4,3 +4,6 @@ AIP-2025-0002,2025-10-10,US-federal,Platform/Adtech Provider,CC,3,"Practical con
 AIP-2025-0003,2025-10-20,US-federal,Campaign/Consultancy,DP,2,"Regular use of psychographic targeting and emotional priming within legal limits.","news_report","https://example.org/dp","Medium"
 AIP-2025-0004,2025-11-01,US-federal,Independent Media/NGOs,CT_raw,2,"Counter-speech ecosystem exists but faces resource and reach disadvantages.","expert_assessment","","Medium"
 AIP-2025-0005,2025-11-05,US-federal,Legislature/Regulators,GS_raw,1,"Partial safeguards on micro-targeting and AI use; coverage is narrow and enforcement uneven.","law_review","https://example.org/gs","High"
+AI-2025-0101,2025-11-18,US-federal,Major AI Platform A,PIC,3,"Cloud region expansion to new jurisdictions with limited independent audit access.",news_report,https://example.org/aipic1,Medium
+AI-2025-0102,2025-11-25,US-federal,Major AI Platform B,CT_raw,2,"Platform launches opt-out tools for political targeting but discovery and defaults remain confusing for most users.",platform_policy,https://example.org/aict1,Medium
+AI-2025-0103,2025-11-29,US-federal,Independent Watchdog,GS_raw,3,"Report finds safety evaluations improving but still opaque for high-impact government-partner deployments.",ngo_report,https://example.org/aigs1,High

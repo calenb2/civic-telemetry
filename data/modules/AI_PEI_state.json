@@ -3,7 +3,7 @@
   "as_of": "2025-12-06",
   "key": "AI_PEI",
   "name": "AI Preference Engineering Index",
-  "score": 55.0,
+  "score": 60.0,
   "band": "High",
   "summary": "Illustrative AI-PEI score computed from component-level evidence.",
   "ect": "ECT-2",
@@ -40,8 +40,8 @@
     {
       "code": "GS_raw",
       "name": "Governance & Safeguards (raw)",
-      "score_0_4": 1.0,
-      "band": "Moderate",
+      "score_0_4": 2.0,
+      "band": "High",
       "summary": ""
     }
   ],
