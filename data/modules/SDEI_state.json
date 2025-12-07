@@ -3,7 +3,7 @@
   "as_of": "2025-12-06",
   "key": "SDEI",
   "name": "Surveillance & Data Exploitation Index",
-  "score": 55.0,
+  "score": 53.8,
   "band": "High",
   "summary": "Illustrative SDEI score computed from component-level evidence.",
   "components": [
@@ -31,14 +31,14 @@
     {
       "code": "AG_raw",
       "name": "Access Governance (raw)",
-      "score_0_4": 2.0,
-      "band": "High",
+      "score_0_4": 1.5,
+      "band": "Moderate",
       "summary": ""
     },
     {
       "code": "RR_raw",
       "name": "Rights & Remedies (raw)",
-      "score_0_4": 1.0,
+      "score_0_4": 1.25,
       "band": "Moderate",
       "summary": ""
     }

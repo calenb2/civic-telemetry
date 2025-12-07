@@ -2,14 +2,14 @@
   "version": "2.0.0",
   "as_of": "2025-12-06",
   "global": {
-    "score": 57.5,
+    "score": 56.8,
     "band": "Amber",
     "summary": ""
   },
   "indices": {
     "ILG": {
       "name": "Institutional & Legal Guardrails",
-      "score": 62.5,
+      "score": 60.5,
       "band": "Red",
       "summary": ""
     },
@@ -30,7 +30,7 @@
     {
       "code": "S",
       "name": "Structural & Constitutional Safeguards",
-      "score": 3.0,
+      "score": 2.8,
       "band": null
     },
     {
