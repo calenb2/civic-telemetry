@@ -49,6 +49,12 @@ if (file_exists($statePath)) {
   <h1>Coercive Apparatus Expansion Index (CAEI)</h1>
   <h3>SCALES module – capacity, reach, targeting, and control</h3>
 
+<?php if ($module && !empty($module['as_of'])): ?>
+  <p style="margin-top:4px; margin-bottom:16px; font-size:0.8rem; color:#666;">
+    Last updated: <?php echo htmlspecialchars($module['as_of']); ?>
+  </p>
+<?php endif; ?>
+
   <?php if (!$state): ?>
     <div class="section">
       <p>No CAEI module data is available yet. Once <code>data/modules/CAEI_state.json</code> is populated, this page will update automatically.</p>

@@ -22,6 +22,7 @@ if (file_exists($ledgerPath)) {
 <head>
   <meta charset="UTF-8">
   <title>SCALES – Constitutional Risk Dashboard</title>
+
   <style>
     body { font-family: Arial, sans-serif; margin:40px; background:#f8f9fb; color:#222; }
     .layout { max-width: 1100px; margin:0 auto; }
@@ -56,6 +57,12 @@ if (file_exists($ledgerPath)) {
 
   <h1>SCALES – Constitutional Risk Dashboard</h1>
   <h3>Separation-of-powers early-warning model (alpha)</h3>
+
+  <?php if ($state && !empty($state['as_of'])): ?>
+    <p style="margin-top:4px; margin-bottom:16px; font-size:0.8rem; color:#666;">
+      Last updated: <?php echo htmlspecialchars($state['as_of']); ?>
+    </p>
+  <?php endif; ?>
 
   <?php if (!$state): ?>
     <p>No SCALES state data is available yet. Once <code>data/scales_state.json</code> is populated, this page will update automatically.</p>
