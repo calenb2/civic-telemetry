@@ -111,6 +111,22 @@ indicators:
     name: "Use of security forces in domestic politics"
     description: "Deployment or threat of deployment of coercive forces in domestic political contexts."
 
+  - id: "A.1"
+    pillar: "A"
+    name: "Selective enforcement & prosecutorial bias"
+    description: "Patterns of selective enforcement, politicized investigations, or favoritism in prosecutions."
+
+  - id: "E.1"
+    pillar: "E"
+    name: "Targeted economic retaliation & patronage"
+    description: "Use of state contracts, regulation, or penalties to reward allies or punish opponents."
+
+  - id: "S2.1"
+    pillar: "S2"
+    name: "Press freedom incidents"
+    description: "Harassment, intimidation, or structural pressure on independent media and journalists."
+
+
   # Additional indicators to be defined in future revisions.
   # This config is designed so the scoring engine can look up weight/placement by indicator_id.
 

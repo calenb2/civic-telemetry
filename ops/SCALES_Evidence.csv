@@ -2,3 +2,6 @@ id,date,jurisdiction,actor,indicator_id,pillar,score_0_4,short_reason,source_typ
 EVT-2025-0001,2025-11-15,US-federal,Supreme Court,S.2,S,3,"Expanded immunity for official acts narrows executive accountability.","court_opinion","https://example.org/opinion","High"
 EVT-2025-0002,2025-10-02,US-federal,Executive,C.3,C,2,"Guard deployment posture near peaceful demonstrations raised coercion concerns.","news_report","https://example.org/article","Medium"
 EVT-2025-0003,2025-09-20,US-federal,State Legislature,L.2,L,2,"Procedural games around certification but results ultimately held.","news_report","","Medium"
+EVT-2025-0004,2025-10-10,US-federal,Attorney General,A.1,A,2,"Pattern of investigations concentrated on opposition figures while similar behavior by allies is ignored.","news_report","https://example.org/a1","Medium"
+EVT-2025-0005,2025-10-18,US-federal,Executive,E.1,E,2,"Use of regulatory threats and selective contracts to pressure media and business opponents.","investigative_report","https://example.org/e1","High"
+EVT-2025-0006,2025-10-25,US-federal,Administration,S2.1,S2,2,"Harsh rhetoric toward independent media and sporadic access restrictions raise press freedom concerns.","press_freedom_index","https://example.org/s21","Medium"

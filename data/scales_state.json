@@ -2,27 +2,27 @@
   "version": "2.0.0",
   "as_of": "2025-12-06",
   "global": {
-    "score": 31.6,
-    "band": "Yellow",
+    "score": 53.3,
+    "band": "Amber",
     "summary": ""
   },
   "indices": {
     "ILG": {
       "name": "Institutional & Legal Guardrails",
-      "score": 50.0,
-      "band": "Amber",
+      "score": 60.0,
+      "band": "Red",
       "summary": ""
     },
     "CCI": {
       "name": "Coercion & Capture",
-      "score": 20.0,
-      "band": "Yellow",
+      "score": 50.0,
+      "band": "Amber",
       "summary": ""
     },
     "CSSI": {
       "name": "Civic Space & Signal",
-      "score": 25.0,
-      "band": "Yellow",
+      "score": 50.0,
+      "band": "Amber",
       "summary": ""
     }
   },
@@ -42,7 +42,7 @@
     {
       "code": "A",
       "name": "Administrative State & Enforcement",
-      "score": null,
+      "score": 2.0,
       "band": null
     },
     {
@@ -54,13 +54,13 @@
     {
       "code": "E",
       "name": "Economic Power & Patronage",
-      "score": null,
+      "score": 2.0,
       "band": null
     },
     {
       "code": "S2",
       "name": "Speech, Media & Social Information Space",
-      "score": null,
+      "score": 2.0,
       "band": null
     }
   ]
