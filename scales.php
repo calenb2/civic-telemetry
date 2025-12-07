@@ -156,6 +156,28 @@ if (file_exists($ledgerPath)) {
     </div>
   <?php endif; ?>
 
+    <div class="section" style="margin-top:24px;">
+      <h2>Data downloads</h2>
+      <p style="font-size:0.9rem;">
+        These files expose the current SCALES snapshot and the public evidence driving it. They are read-only views of the
+        same inputs the dashboard uses.
+      </p>
+      <ul style="font-size:0.9rem;">
+        <li>
+          <a href="data/scales_state.json">Download SCALES state (JSON)</a>
+        </li>
+        <li>
+          <a href="data/scales_ledger_public.json">Download SCALES public ledger (JSON)</a>
+        </li>
+        <li>
+          <a href="ops/SCALES_Evidence.csv">Download SCALES evidence (CSV)</a>
+        </li>
+      </ul>
+      <p style="font-size:0.8rem;color:#666;margin-top:6px;">
+        Note: links are best opened or saved from a desktop browser; some mobile browsers may try to render the raw JSON inline.
+      </p>
+    </div>
+
   <div class="section" style="margin-top:24px;">
     <h2>About SCALES</h2>
     <p style="font-size:0.9rem;">
@@ -187,6 +209,22 @@ if (file_exists($ledgerPath)) {
     </ul>
   </div>
 
+  <div class="section" style="margin-top:24px;">
+    <h2>How to read SCALES bands</h2>
+    <p style="font-size:0.9rem;">
+      Core SCALES bands describe the overall constitutional risk environment:
+    </p>
+    <ul style="font-size:0.9rem; margin-top:6px;">
+      <li><strong>Green</strong> – Institutions are functioning, safeguards are holding, and recent pressure is limited.</li>
+      <li><strong>Amber</strong> – Elevated stress on safeguards or civic space; watch closely for trend direction.</li>
+      <li><strong>Red</strong> – Serious, multi-pillar strain on checks and balances; guardrails are being actively weakened.</li>
+      <li><strong>Black</strong> – Structural breakdown or systemic capture in progress; emergency conditions for democracy.</li>
+    </ul>
+    <p style="font-size:0.9rem; margin-top:8px;">
+      Module bands use a simpler four-step scale:
+      <strong>Low</strong>, <strong>Moderate</strong>, <strong>High</strong>, and <strong>Extreme</strong> risk in that specific domain.
+    </p>
+  </div>
 
 
   <div class="footer">

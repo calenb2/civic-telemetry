@@ -115,6 +115,14 @@ if (file_exists($statePath)) {
       <?php endif; ?>
     </div>
 
+    <div class="section">
+      <h2>AI-PEI data downloads</h2>
+      <ul style="font-size:0.9rem;">
+        <li><a href="data/modules/AI_PEI_state.json">AI-PEI state (JSON)</a></li>
+        <li><a href="ops/AI_PEI_Evidence.csv">AI-PEI evidence (CSV)</a></li>
+      </ul>
+    </div>
+
     <?php if (!empty($state['notes'])): ?>
       <div class="section">
         <h2>Notes</h2>

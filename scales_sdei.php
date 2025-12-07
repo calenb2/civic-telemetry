@@ -147,6 +147,14 @@ if (file_exists($statePath)) {
     </div>
   <?php endif; ?>
 
+    <div class="section">
+      <h2>SDEI data downloads</h2>
+      <ul style="font-size:0.9rem;">
+        <li><a href="data/modules/SDEI_state.json">SDEI state (JSON)</a></li>
+        <li><a href="ops/SDEI_Evidence.csv">SDEI evidence (CSV)</a></li>
+      </ul>
+    </div>
+
   <div class="footer">
     CivicTelemetry.org · Independent civic observatory · Not affiliated with DHS, ICE, or the U.S. Government.
   </div>
