@@ -133,6 +133,27 @@
     </ul>
   </div>
 
+  <div class="section">
+    <h2>Evidence sources and automation</h2>
+    <p style="font-size:0.9rem;">
+      Each SCALES evidence row is tied to at least one primary or near-primary document. The model does not rely on rumors
+      or single anonymous sources. Instead, it watches a small set of public feeds and repositories that can be harvested
+      in a repeatable way:
+    </p>
+    <ul style="font-size:0.9rem;">
+      <li><strong>Supreme Court opinions</strong> (<code>scotus_opinion_pdf</code>) – official slip opinions from <code>supremecourt.gov</code> that change presidential accountability, separation of powers, or agency authority.</li>
+      <li><strong>Federal statutes and CRS reports</strong> (<code>congress_public_law</code>, <code>congress_crs_report</code>) – reauthorizations and reforms such as FISA Section 702 under the Reforming Intelligence and Securing America Act (RISAA).</li>
+      <li><strong>Declassified oversight material</strong> (<code>odni_fisc_opinion</code>, <code>ig_report</code>) – Foreign Intelligence Surveillance Court opinions and inspector-general reports that describe how legal powers are being used in practice.</li>
+      <li><strong>Regulatory enforcement actions</strong> (<code>ftc_press_release</code>, <code>agency_enforcement</code>) – enforcement by agencies like the FTC against data brokers, platforms, or vendors that governs how surveillance data can be collected and sold.</li>
+      <li><strong>Court decisions on rights and remedies</strong> (<code>federal_court_decision</code>, <code>civil_liberties_org_summary</code>) – rulings that expand or constrain remedies against unconstitutional surveillance or abuse.</li>
+    </ul>
+    <p style="font-size:0.9rem;">
+      In this alpha, evidence rows are curated by hand from these sources. The <code>source_type</code> field in each CSV
+      is deliberately constrained so that a later automation step can poll the same feeds, propose candidate evidence rows,
+      and let a human reviewer decide which ones become part of the public ledger.
+    </p>
+  </div>
+
   <div class="footer">
     CivicTelemetry.org · Independent civic observatory · Not affiliated with DHS, ICE, or the U.S. Government.
   </div>
