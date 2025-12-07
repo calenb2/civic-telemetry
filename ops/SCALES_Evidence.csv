@@ -1,0 +1,4 @@
+id,date,jurisdiction,actor,indicator_id,pillar,score_0_4,short_reason,source_type,source_link,confidence
+EVT-2025-0001,2025-11-15,US-federal,Supreme Court,S.2,S,3,"Expanded immunity for official acts narrows executive accountability.","court_opinion","https://example.org/opinion","High"
+EVT-2025-0002,2025-10-02,US-federal,Executive,C.3,C,2,"Guard deployment posture near peaceful demonstrations raised coercion concerns.","news_report","https://example.org/article","Medium"
+EVT-2025-0003,2025-09-20,US-federal,State Legislature,L.2,L,2,"Procedural games around certification but results ultimately held.","news_report","","Medium"

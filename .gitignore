@@ -11,3 +11,4 @@ Thumbs.db
 # Dependency folders (for future use)
 vendor/
 node_modules/
+notebook.ipynb

@@ -2,66 +2,66 @@
   "version": "2.0.0",
   "as_of": "2025-12-06",
   "global": {
-    "score": 61,
-    "band": "Orange",
-    "summary": "Separation-of-powers risk is elevated, driven by emergency posture, contested election rules, and AI-enabled persuasion capacity."
+    "score": 31.6,
+    "band": "Yellow",
+    "summary": ""
   },
   "indices": {
     "ILG": {
       "name": "Institutional & Legal Guardrails",
-      "score": 64,
-      "band": "Orange",
-      "summary": "Guardrails are under stress from immunity doctrines and emergency powers changes."
+      "score": 50.0,
+      "band": "Amber",
+      "summary": ""
     },
     "CCI": {
       "name": "Coercion & Capture",
-      "score": 70,
-      "band": "Red",
-      "summary": "Security and administrative apparatus are increasingly bent toward partisan objectives."
+      "score": 20.0,
+      "band": "Yellow",
+      "summary": ""
     },
     "CSSI": {
       "name": "Civic Space & Signal",
-      "score": 58,
-      "band": "Amber",
-      "summary": "Civic space remains open but is being distorted by disinformation and AI preference engineering."
+      "score": 25.0,
+      "band": "Yellow",
+      "summary": ""
     }
   },
-  "pillars": {
-    "S": {
+  "pillars": [
+    {
       "code": "S",
       "name": "Structural & Constitutional Safeguards",
-      "score": 2.5,
-      "band": "Amber"
+      "score": 3.0,
+      "band": null
     },
-    "C": {
+    {
       "code": "C",
       "name": "Coercive & Security Apparatus",
-      "score": 3.1,
-      "band": "Red"
+      "score": 2.0,
+      "band": null
     },
-    "A": {
+    {
       "code": "A",
       "name": "Administrative State & Enforcement",
-      "score": 2.4,
-      "band": "Amber"
+      "score": null,
+      "band": null
     },
-    "L": {
+    {
       "code": "L",
       "name": "Legislative & Electoral Integrity",
-      "score": 2.8,
-      "band": "Amber"
+      "score": 2.0,
+      "band": null
     },
-    "E": {
+    {
       "code": "E",
       "name": "Economic Power & Patronage",
-      "score": 2.6,
-      "band": "Amber"
+      "score": null,
+      "band": null
     },
-    "S2": {
+    {
       "code": "S2",
       "name": "Speech, Media & Social Information Space",
-      "score": 2.9,
-      "band": "Amber"
+      "score": null,
+      "band": null
     }
-  }
+  ]
 }
