@@ -1,0 +1,33 @@
+# Canonical feeds SCALES watches for candidate evidence.
+# This list is intentionally small; quality > quantity.
+
+feeds:
+  - id: scotus_recent
+    label: "Recent Supreme Court decisions"
+    source_type: scotus_opinion_pdf
+    feed_type: rss
+    url: "http://www.law.cornell.edu/supct/rss/supct_recent.rss"
+
+  - id: ftc_press
+    label: "FTC press releases"
+    source_type: ftc_press_release
+    feed_type: rss
+    url: "https://www.ftc.gov/feeds/press-release.xml"
+
+  - id: odni_ic_on_the_record
+    label: "IC On The Record – declassifications"
+    source_type: odni_fisc_opinion
+    feed_type: html_list   # handled later; not parsed by the first RSS script
+    url: "https://www.intelligence.gov/ic-on-the-record-database"
+
+  - id: crs_reports
+    label: "CRS reports (mirror feed)"
+    source_type: congress_crs_report
+    feed_type: rss
+    url: "https://www.everycrsreport.com/rss.xml"
+
+  - id: courtlistener_scotus
+    label: "CourtListener SCOTUS opinions"
+    source_type: federal_court_decision
+    feed_type: html_list
+    url: "https://www.courtlistener.com/?court=scotus"
