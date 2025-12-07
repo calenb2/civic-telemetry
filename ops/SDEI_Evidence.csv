@@ -1,0 +1,6 @@
+id,date,jurisdiction,actor,component_code,score_0_4,short_reason,source_type,source_link,confidence
+SDEI-2025-0001,2025-09-10,US-federal,Fusion Center,CB,3,"Multiple high-sensitivity data sources (telecom, license plate, financial, travel) feeding into integrated systems.","investigative_report","https://example.org/cb","High"
+SDEI-2025-0002,2025-09-20,US-federal,Data Platform Vendor,IL,3,"Strong entity-resolution and cross-database linkability enabling persistent tracking across contexts.","vendor_docs","https://example.org/il","Medium"
+SDEI-2025-0003,2025-10-05,US-federal,Analytics Unit,AC,3,"Pattern-of-life analysis and risk scoring regularly used in enforcement and intelligence workflows.","policy_report","https://example.org/ac","High"
+SDEI-2025-0004,2025-10-18,US-federal,Agency Access Policy,AG_raw,2,"Role-based access and audit logs exist but enforcement is inconsistent and exceptions are common.","ig_report","","Medium"
+SDEI-2025-0005,2025-11-02,US-federal,Courts/Legislature,RR_raw,1,"Individuals have limited visibility and remedies for data exploitation; some case law and statutes provide partial avenues.","law_review","https://example.org/rr","Medium"

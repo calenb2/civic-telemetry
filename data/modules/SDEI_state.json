@@ -3,48 +3,48 @@
   "as_of": "2025-12-06",
   "key": "SDEI",
   "name": "Surveillance & Data Exploitation Index",
-  "score": 76,
+  "score": 60.0,
   "band": "High",
-  "summary": "Collection breadth, integration depth, and analytic capability of surveillance systems are high, while access governance and rights remedies remain uneven.",
+  "summary": "Illustrative SDEI score computed from component-level evidence.",
   "components": [
     {
       "code": "CB",
       "name": "Collection Breadth",
-      "score_0_4": 3,
-      "band": "High",
-      "summary": "Large and growing number of data sources (telecom, location, financial, biometric) feeding into government or state-aligned systems."
+      "score_0_4": 3.0,
+      "band": "Extreme",
+      "summary": ""
     },
     {
       "code": "IL",
       "name": "Integration & Linkability",
-      "score_0_4": 3,
-      "band": "High",
-      "summary": "Multiple datasets are linked through shared identifiers and entity-resolution tools, enabling cross-context tracking."
+      "score_0_4": 3.0,
+      "band": "Extreme",
+      "summary": ""
     },
     {
       "code": "AC",
       "name": "Analytic Capability",
-      "score_0_4": 3,
-      "band": "High",
-      "summary": "Pattern-of-life analysis, risk scoring, and AI-assisted search capabilities are widely available to enforcement and intelligence actors."
+      "score_0_4": 3.0,
+      "band": "Extreme",
+      "summary": ""
     },
     {
       "code": "AG_raw",
       "name": "Access Governance (raw)",
-      "score_0_4": 2,
-      "band": "Mixed",
-      "summary": "Role-based access and basic audit logging exist, but enforcement is inconsistent and exceptions are common."
+      "score_0_4": 2.0,
+      "band": "High",
+      "summary": ""
     },
     {
       "code": "RR_raw",
       "name": "Rights & Remedies (raw)",
-      "score_0_4": 1,
-      "band": "Weak",
-      "summary": "Individuals have limited visibility into how their data is used and few practical avenues to correct, contest, or limit exploitation."
+      "score_0_4": 1.0,
+      "band": "Moderate",
+      "summary": ""
     }
   ],
   "notes": [
-    "Values are illustrative alpha scores to exercise the SDEI module page.",
-    "In production, SDEI would be derived from tagged contracts, statutory frameworks, audit reports, and documented abuses or remedies in the surveillance and data space."
+    "Scores in this alpha run are illustrative and based on a small evidence set.",
+    "Production runs should use a richer, regularly updated SDEI_Evidence.csv."
   ]
 }
