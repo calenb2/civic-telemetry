@@ -3,50 +3,50 @@
   "as_of": "2025-12-06",
   "key": "AI_PEI",
   "name": "AI Preference Engineering Index",
-  "score": 74,
+  "score": 55.0,
   "band": "High",
-  "summary": "AI-enabled persuasion capacity is high and increasingly concentrated, raising concerns about polarization-by-design and semi-lock dynamics.",
+  "summary": "Illustrative AI-PEI score computed from component-level evidence.",
   "ect": "ECT-2",
   "ect_label": "Dual-elite alternation",
   "components": [
     {
       "code": "PIC",
       "name": "Persuasion Infrastructure Capacity",
-      "score_0_4": 3,
-      "band": "High",
-      "summary": "Mature stack: data lakes, ML, and gen-AI tools widely used in comms and campaigns."
+      "score_0_4": 3.0,
+      "band": "Extreme",
+      "summary": ""
     },
     {
       "code": "CC",
       "name": "Centralization of Control",
-      "score_0_4": 3,
-      "band": "High",
-      "summary": "Practical control of key persuasion channels is concentrated in a small set of state-aligned and corporate platforms."
+      "score_0_4": 3.0,
+      "band": "Extreme",
+      "summary": ""
     },
     {
       "code": "DP",
       "name": "Deployment Pattern",
-      "score_0_4": 3,
+      "score_0_4": 2.0,
       "band": "High",
-      "summary": "Regular use for segmented, emotional, and wedge-issue campaigns; some evidence of manipulative tactics."
+      "summary": ""
     },
     {
       "code": "CT_raw",
       "name": "Contestability & Counter-speech (raw)",
-      "score_0_4": 2,
-      "band": "Mixed",
-      "summary": "Independent media and civil society still exist but operate with structural disadvantages and targeted chilling effects."
+      "score_0_4": 2.0,
+      "band": "High",
+      "summary": ""
     },
     {
       "code": "GS_raw",
       "name": "Governance & Safeguards (raw)",
-      "score_0_4": 1,
-      "band": "Weak",
-      "summary": "Partial privacy and platform rules exist but are narrow, under-enforced, or full of carve-outs."
+      "score_0_4": 1.0,
+      "band": "Moderate",
+      "summary": ""
     }
   ],
   "notes": [
-    "Scores are illustrative alpha values for demonstration purposes.",
-    "In a production run, AI_PEI would be calculated from tagged spend, platform rules, and documented campaign usage patterns."
+    "Scores in this alpha run are illustrative and based on a small evidence set.",
+    "Production runs should use a richer, regularly updated AI_PEI_Evidence.csv."
   ]
 }

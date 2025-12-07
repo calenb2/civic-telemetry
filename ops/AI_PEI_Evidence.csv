@@ -1,0 +1,6 @@
+id,date,jurisdiction,actor,component_code,score_0_4,short_reason,source_type,source_link,confidence
+AIP-2025-0001,2025-10-01,US-federal,Major Party Campaign,PIC,3,"Large, integrated data/AI stack used for micro-targeted political messaging.","investigative_report","https://example.org/pic","High"
+AIP-2025-0002,2025-10-10,US-federal,Platform/Adtech Provider,CC,3,"Practical control of key persuasion infrastructure concentrated in a small set of platforms.","policy_report","https://example.org/cc","Medium"
+AIP-2025-0003,2025-10-20,US-federal,Campaign/Consultancy,DP,2,"Regular use of psychographic targeting and emotional priming within legal limits.","news_report","https://example.org/dp","Medium"
+AIP-2025-0004,2025-11-01,US-federal,Independent Media/NGOs,CT_raw,2,"Counter-speech ecosystem exists but faces resource and reach disadvantages.","expert_assessment","","Medium"
+AIP-2025-0005,2025-11-05,US-federal,Legislature/Regulators,GS_raw,1,"Partial safeguards on micro-targeting and AI use; coverage is narrow and enforcement uneven.","law_review","https://example.org/gs","High"
