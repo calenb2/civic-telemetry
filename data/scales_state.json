@@ -2,14 +2,14 @@
   "version": "2.0.0",
   "as_of": "2025-12-06",
   "global": {
-    "score": 57.7,
+    "score": 57.5,
     "band": "Amber",
     "summary": ""
   },
   "indices": {
     "ILG": {
       "name": "Institutional & Legal Guardrails",
-      "score": 62.2,
+      "score": 61.7,
       "band": "Red",
       "summary": ""
     },
@@ -21,7 +21,7 @@
     },
     "CSSI": {
       "name": "Civic Space & Signal",
-      "score": 57.3,
+      "score": 57.0,
       "band": "Amber",
       "summary": ""
     }
@@ -48,7 +48,7 @@
     {
       "code": "L",
       "name": "Legislative & Electoral Integrity",
-      "score": 2.1666666666666665,
+      "score": 2.125,
       "band": null
     },
     {

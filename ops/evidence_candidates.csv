@@ -1,8 +1,8 @@
 candidate_id,feed_id,source_type,title,link,pub_date,summary,status,created_at
 413098f9d6298d77,scotus_recent,scotus_opinion_pdf,McGEE v. McFADDEN. Decided 06/28/2019,http://www.law.cornell.edu/supremecourt/text/18-7277,"Fri, 28 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
-d2f9989452adb991,scotus_recent,scotus_opinion_pdf,DEPARTMENT OF COMMERCE  v. NEW YORK. Decided 06/27/2019,http://www.law.cornell.edu/supremecourt/text/18-966,"Thu, 27 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
+d2f9989452adb991,scotus_recent,scotus_opinion_pdf,DEPARTMENT OF COMMERCE  v. NEW YORK. Decided 06/27/2019,http://www.law.cornell.edu/supremecourt/text/18-966,"Thu, 27 Jun 2019 00:00:00 EDT",,used,2025-12-07T19:00:03Z
 2e9e3671ba85f164,scotus_recent,scotus_opinion_pdf,"MITCHELL, GERALD P. v. WISCONSIN. Decided 06/27/2019",http://www.law.cornell.edu/supremecourt/text/18-6210,"Thu, 27 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
-2b0f50396c037221,scotus_recent,scotus_opinion_pdf,"RUCHO, ROBERT A., ET AL. v. COMMON CAUSE, ET AL.. Decided 06/27/2019",http://www.law.cornell.edu/supremecourt/text/18-422,"Thu, 27 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
+2b0f50396c037221,scotus_recent,scotus_opinion_pdf,"RUCHO, ROBERT A., ET AL. v. COMMON CAUSE, ET AL.. Decided 06/27/2019",http://www.law.cornell.edu/supremecourt/text/18-422,"Thu, 27 Jun 2019 00:00:00 EDT",,used,2025-12-07T19:00:03Z
 b6e05ea77fbc0a5d,scotus_recent,scotus_opinion_pdf,TENN. WINE AND SPIRITS RETAILERS ASSN. v. BLAIR. Decided 06/26/2019,http://www.law.cornell.edu/supremecourt/text/18-96,"Wed, 26 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
 6821ed253a73bc53,scotus_recent,scotus_opinion_pdf,"KISOR, JAMES L. v. WILKIE, SEC. OF VA. Decided 06/26/2019",http://www.law.cornell.edu/supremecourt/text/18-15,"Wed, 26 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
 86cba5678f85f914,scotus_recent,scotus_opinion_pdf,"UNITED STATES v. HAYMOND, ANDRE R.. Decided 06/26/2019",http://www.law.cornell.edu/supremecourt/text/17-1672,"Wed, 26 Jun 2019 00:00:00 EDT",,new,2025-12-07T19:00:03Z
